@@ -1,0 +1,32 @@
+$bg__blend-type: multiply;
+$bg__classes:
+    "error",
+    "comingsoon",
+    "privacy";
+$bg__comingsoon-img: "../img/yoga.jpg";
+$bg__error-img: "../img/yoga.jpg";
+$bg__privacy-img: "../img/privacy.jpg";
+$bg__aoa:
+    $bg__error-img,
+    $bg__comingsoon-img,
+    $bg__privacy-img;
+$body__min-height: 100%;
+$color__bg-1: #bfbfbf;
+$color__container-bg: #fff;
+$color__red: rgb(192, 9, 9);
+$color__shadow: #333;
+$font__weight--thin: 100 !important;
+$font-logo__family: 'IBM Plex Sans';
+$font-logo__size: 24px;
+$font-main__family: 'IBM Plex Sans';
+$font-main__size: 16px;
+$header__height: 78px;
+$section__min-height: 100vh;
+$text__shadow: 1px 1px 2px $color__shadow;
+$theme-colors: (
+  "primary": #454545,
+  "secondary": #fff,
+  "danger": $color__red,
+  "dark": #333,
+  "transparent": transparent
+);
