@@ -1,0 +1,65 @@
+@include aoa-bg-series($bg__classes,$bg__aoa,0,"bottom right");
+
+*{
+    font-family: $font-main__family;
+}
+
+%bg-blend{
+    @include background-blend($bg__blend-type, $color__bg-1);
+}
+
+.comingsoon{
+    &-s1{
+        @extend %bg-blend;
+    }
+}
+.error{
+    &-s1{
+        @extend %bg-blend;
+    }
+}
+.privacy{
+    &-container{
+        background-color: $color__container-bg !important;
+        opacity: 0.8;
+    }
+    &-s1{
+        @calc-param-add(min-height,$section__min-height,$header__height);
+        @extend %bg-blend;
+    }
+}
+.font{
+    &-logo{
+        &::first-letter{
+            color: $color__red;
+            font-weight: 700 !important;
+        }
+        @include set-font-params($font-logo__family,$font-logo__size);
+        font-weight: 100!important;
+        font-variant: small-caps;
+        opacity: 0.7;
+
+    }
+    &-menu{
+        @include set-font-params($font-main__family,$font-main__size);
+    }
+    &-thin{
+        font-weight: $font__weight--thin;
+    }
+}
+.navbar{
+    &-toggler{
+        &-icon{
+            background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !important;
+        }
+    }
+}
+.text{
+    &-shadow{
+        text-shadow: $text__shadow;
+    }
+}
+
+body{
+    background-color: $color__bg-1;
+}
