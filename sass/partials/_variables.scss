@@ -1,32 +1,78 @@
+$bg__about-img:
+  "../img/about/helen.jpg",
+  "../img/index/yoga_pray.jpg";
 $bg__blend-type: multiply;
+$bg__blend-type--diff: difference;
+$bg__blend-type--soft: soft-light;
 $bg__classes:
     "error",
     "comingsoon",
-    "privacy";
+    "privacy",
+    "index",
+    "about",
+    "training",
+    "classes",
+    "schedule",
+    "contact";
+$bg__classes-img: 
+    "../img/classes/classes.jpg",
+    "../img/yoga_vector.png",
+    "../img/yoga_vector_2.png",    
+    "../img/yoga_vector_3.png",
+    "../img/yoga_vector.png",
+    "../img/yoga_vector_2.png";
 $bg__comingsoon-img: "../img/yoga.jpg";
+$bg__contact-img: 
+  "../img/about/helen.jpg",
+  "../img/yoga_vector.png";
 $bg__error-img: "../img/yoga.jpg";
+$bg__index-img:
+    "../img/index/woman.jpg",
+    "../img/index/yoga_pray.jpg",
+    "../img/yoga_vector.png",
+    "../img/yoga_vector.png",
+    "../img/yoga_vector_2.png",    
+    "../img/yoga_vector_3.png";
 $bg__privacy-img: "../img/privacy.jpg";
+$bg__schedule-img: 
+    "../img/schedule/double.jpg",
+    "../img/yoga_vector.png";
+$bg__training-img:
+    "../img/training/training.jpg",
+    "../img/yoga_vector.png",
+    "../img/yoga_vector_2.png",    
+    "../img/yoga_vector_3.png";
 $bg__aoa:
     $bg__error-img,
     $bg__comingsoon-img,
-    $bg__privacy-img;
+    $bg__privacy-img,
+    $bg__index-img,
+    $bg__about-img,
+    $bg__training-img,
+    $bg__classes-img,
+    $bg__schedule-img,
+    $bg__contact-img;
 $body__min-height: 100%;
-$color__bg-1: #bfbfbf;
+$color__bg-1: #ccc;
 $color__container-bg: #fff;
+$color__gray:#757575;
 $color__red: rgb(192, 9, 9);
 $color__shadow: #333;
+$color__white:#fff;
 $font__weight--thin: 100 !important;
 $font-logo__family: 'IBM Plex Sans';
 $font-logo__size: 24px;
 $font-main__family: 'IBM Plex Sans';
 $font-main__size: 16px;
 $header__height: 78px;
+$nav-link__hover-filter: contrast(0.6);
 $section__min-height: 100vh;
 $text__shadow: 1px 1px 2px $color__shadow;
 $theme-colors: (
-  "primary": #454545,
+  "primary": $color__gray,
   "secondary": #fff,
   "danger": $color__red,
   "dark": #333,
+  "light":#bbb,
   "transparent": transparent
 );

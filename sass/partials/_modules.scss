@@ -7,24 +7,77 @@
 %bg-blend{
     @include background-blend($bg__blend-type, $color__bg-1);
 }
+%bg-scroll{
+    background-attachment: scroll;
+}
 
+.about{
+    &-s1{
+        @extend %bg-blend;
+        @extend %bg-scroll;
+        background-position:top center;
+    }
+    &-s2{
+        @extend %bg-blend;
+        @extend %bg-scroll;
+        background-position:bottom center;
+    }
+}
+.classes{
+    &-s1{
+        @extend %bg-blend;
+        @extend %bg-scroll;
+    }
+    &-s2{
+        @extend %bg-scroll;
+        background-blend-mode: $bg__blend-type--soft;
+        background-position:bottom center;
+        background-size: inherit;
+    }
+    &-s3{
+        @extend %bg-scroll;
+        background-blend-mode: $bg__blend-type--diff;
+        background-position:bottom center;
+        background-size: inherit;
+    }
+    &-s4{
+        @extend %bg-scroll;
+        background-blend-mode: $bg__blend-type--soft;
+        background-position:bottom center;
+        background-size: inherit;
+    }
+    &-s5{
+        @extend %bg-scroll;
+        background-blend-mode: $bg__blend-type--diff;
+        background-position:bottom center;
+        background-size: inherit;
+    }
+    &-s6{
+        @extend %bg-scroll;
+        background-blend-mode: $bg__blend-type--soft;
+        background-position:bottom center;
+        background-size: inherit;
+    }
+}
 .comingsoon{
     &-s1{
         @extend %bg-blend;
     }
 }
-.error{
+.contact{
     &-s1{
         @extend %bg-blend;
+        @extend %bg-scroll;
+        background-position:top center;
+    }
+    &-s2{
+        @extend %bg-blend;
+        @extend %bg-scroll;
+        background-position:bottom center;
     }
 }
-.privacy{
-    &-container{
-        background-color: $color__container-bg !important;
-        opacity: 0.8;
-    }
+.error{
     &-s1{
-        @calc-param-add(min-height,$section__min-height,$header__height);
         @extend %bg-blend;
     }
 }
@@ -47,6 +100,68 @@
         font-weight: $font__weight--thin;
     }
 }
+.hover{
+    &-red{
+        &:hover{
+            color: $color__red !important;
+        }        
+    }
+}
+.img{
+    &-fit{
+        height:100%;
+        object-fit: cover;
+        width:100%;
+    }
+}
+.index{
+    &-s1{
+        @extend %bg-blend;
+        @extend %bg-scroll;
+    }
+    &-s2{
+        @extend %bg-blend;
+        @extend %bg-scroll;
+        background-position:bottom center;
+    }
+    &-s3{
+        @extend %bg-blend;
+        @extend %bg-scroll;
+        background-position:bottom center;
+    }
+    &-s4{
+        @extend %bg-blend;
+        @extend %bg-scroll;
+        background-position:top center;
+    }
+    &-s5{
+        @extend %bg-scroll;
+        background-blend-mode: $bg__blend-type--soft;
+        background-position:bottom center;
+        background-size: inherit;
+    }
+    &-s6{
+        @extend %bg-scroll;
+        background-blend-mode: $bg__blend-type--diff;
+        background-position:bottom center;
+        background-size: inherit;
+    }
+}
+.minh{
+    &-50vh{
+        min-height: 50vh;
+    }   
+    &-75vh{
+        min-height: 75vh;
+    }
+}
+.nav{
+    &-link{
+        &:hover{
+            color:$color__red !important;
+        }
+    }
+}
 .navbar{
     &-toggler{
         &-icon{
@@ -54,12 +169,65 @@
         }
     }
 }
+.opacity{
+    &-7{
+        opacity: 0.7;
+    }
+    &-8{
+        opacity: 0.8;
+    }
+}
+.privacy{
+    &-container{
+        background-color: $color__container-bg !important;
+        opacity: 0.8;
+    }
+    &-s1{
+        @include calc-param-add(min-height,$section__min-height,$header__height);
+        @extend %bg-blend;
+    }
+}
+.schedule{
+    &-s1{
+        @extend %bg-blend;
+        @extend %bg-scroll;
+    }
+    &-s2{
+        @extend %bg-scroll;
+        background-blend-mode: $bg__blend-type--soft;
+        background-position:bottom center;
+        background-size: inherit;
+    }
+}
 .text{
     &-shadow{
         text-shadow: $text__shadow;
     }
 }
-
+.training{
+    &-s1{
+        @extend %bg-blend;
+        @extend %bg-scroll;
+        background-position:top center;
+    }
+    &-s2{
+        @extend %bg-blend;
+        @extend %bg-scroll;
+        background-position:bottom center;
+    }
+    &-s3{
+        @extend %bg-scroll;
+        background-blend-mode: $bg__blend-type--soft;
+        background-position:bottom center;
+        background-size: inherit;
+    }
+    &-s4{
+        @extend %bg-scroll;
+        background-blend-mode: $bg__blend-type--diff;
+        background-position:bottom center;
+        background-size: inherit;
+    }
+}
 body{
     background-color: $color__bg-1;
 }
