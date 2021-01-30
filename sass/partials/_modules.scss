@@ -199,6 +199,14 @@
         background-size: inherit;
     }
 }
+.table{
+    &-striped{
+        & tr:nth-child(2n+2){
+            background-color: lighten($color__gray,20%);
+            color: $color__white;
+        }
+    }
+}
 .text{
     &-shadow{
         text-shadow: $text__shadow;

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
     <link rel="icon" href="img/favicon_b.png">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.min.css">
     <title>Yoga studio | Classes Schedule</title>
 </head>
 <body class="bg-light">
@@ -65,10 +65,10 @@
                 </div>
             </div>
         </section>
-        <section class="classes-s2 align-items-center justify-content-center d-flex bg-light text-dark minh-100vh">
+        <section class="classes-s2 align-items-center justify-content-center d-flex bg-light text-dark minh-50vh">
             <div class="row justify-content-start mx-0 w-100">
-                <div class="col-10 col-md-8 mx-auto">
-                    <table class="table table-striped w-100 bg-white border border-dark opacity-7">
+                <div class="col-10 col-md-8 mx-auto py-5">
+                    <table class="table table-striped w-100 bg-white border border-dark opacity-7" id="schedule">
                         <thead class="thead-dark bg-primary text-white">
                             <tr>
                                 <th class="p-2">Day</th>
@@ -78,7 +78,7 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="p-2">
+                                <td class="p-2" rowspan="1">
                                     Mon
                                 </td>
                                 <td class="p-2">
@@ -140,11 +140,10 @@
     </main>
     <footer class="container-fluid bg-dark text-center text-white p-3">
         <small class="my-0">
-            Copyright &copy; 2020 Tomasz Pankowski. All rights reserved.
+            Copyright &copy; 2020-2021 Tomasz Pankowski. All rights reserved.
             <a class="text-white" href="privacy.html">Privacy policy</a>
         </small>
     </footer>
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.min.js"></script>
 </body>
 </html>
